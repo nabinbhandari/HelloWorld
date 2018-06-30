@@ -1,12 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp">
+    android:orientation="vertical">
+
+    <include layout="@layout/rich_editor_options" />
+
+    <jp.wasabeef.richeditor.RichEditor
+        android:id="@+id/editor"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_margin="8dp"
+        android:layout_marginTop="20dp"
+        android:text="HTML:"
+        android:textSize="12sp" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="15dp" />
+
+</LinearLayout>
