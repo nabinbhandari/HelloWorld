@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp">
+    android:layout_margin="16dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.ebanx.swipebtn.SwipeButton
+        android:id="@+id/swipeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:button_background="@drawable/shape_button_squared"
+        app:button_bottom_padding="8dp"
+        app:button_image_disabled="@drawable/ic_lock_open_black_24dp"
+        app:button_image_enabled="@drawable/ic_lock_outline_black_24dp"
+        app:button_left_padding="8dp"
+        app:button_right_padding="8dp"
+        app:button_top_padding="8dp"
+        app:button_trail_enabled="true"
+        app:has_activate_state="true"
+        app:initial_state="disabled"
+        app:inner_text="SWIPE TO ACTIVATE"
+        app:inner_text_background="@drawable/shape_squared"
+        app:inner_text_bottom_padding="8dp"
+        app:inner_text_color="@android:color/white"
+        app:inner_text_size="16sp"
+        app:inner_text_top_padding="8dp" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
 
-</RelativeLayout>
+</LinearLayout>

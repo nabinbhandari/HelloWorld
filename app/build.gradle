@@ -5,7 +5,7 @@ android {
 
     defaultConfig {
         applicationId "com.nabinbhandari.helloworld"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -21,4 +21,5 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.ebanx:swipe-button:0.8.3'
 }
